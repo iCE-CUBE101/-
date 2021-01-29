@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<title>欢迎来到文案库</title>
+<style type="text/css">
+	@font-face{
+font-family: 'SourceHanSans-Normal';
+src : url('SourceHanSans-Normal.otf');
+}
+
+	#deBug{
+display:none;
+font-weight:bold;
+font-family:SourceHanSans-Normal;
+text-align:center;
+border:1px solid #FFFFFF;
+height:50px;
+width:50px;
+position:fixed;
+top:80%;
+right:10%;
+background-color:#6B7F88;
+color:#FFFFFF;
+}
+
+	textarea{
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+	body{
+background-color:#242424;
+}
+
+	#homePic{
+float:left;
+margin-left:-10px;
+margin-top:-50px;
+width:380px;
+height:200px;
+background-image:url(homePic.png);
+background-size:cover;
+border-bottom:3px solid #FFFFFF;
+}
+
+	.bodyArticle{
+font-family:SourceHanSans-Normal;
+display:none;
+float:left;
+margin-top:20px;
+margin-left:20px;
+background-color:#111111;
+width:315px;
+height:auto;
+text-align:center;
+}
+
+	.h11{
+font-size:35px;
+text-align:center;
+color:#FFFFFF;
+margin-bottom:-5px;
+}
+
+	.h21{ 
+margin-bottom:-32px;
+font-size:25px;
+text-align:center;
+color:#FFFFFF;
+}
+
+	.span1{
+color:#968667;
+font-weight:bold;
+font-size:15px;
+}
+
+	.span2{
+color:#968667;
+font-weight:bold;
+font-size:12px;
+}
+
+	.span3{
+color:#FFFFFF;
+font-weight:lighter;
+font-size:12px;
+}
+
+	.wePic{
+max-width:240px;
+margin-top:50px;
+}
+
+	.weDiv{
+margin-top:20px;
+}
+
+	.morePic{
+float:left;
+max-width:130px;
+margin-left:18px;
+margin-bottom:50px;
+}
+
+	header{
+margin-bottom:50px;
+}
+
+	from{
+color:#FFFFFF;
+}
+
+	.registrationFormSet{
+-webkit-appearance: none;
+border-radius: 0;
+background-color:#FFFFFF;
+font-weight:bold;
+float:left;
+margin-left:30px;
+margin-bottom:10px;
+width:240px;
+height:30px;
+}
+
+	#textarea{
+font-weight:bold;
+float:left;
+margin-left:30px;
+margin-bottom:10px;
+width:240px;
+height:90px;
+}
+
+	#submit1{
+width:253px;
+background-color:#6B7F88;
+color:#FFFFFF;
+}
+
+</style>
+
+<script src="jquery-3.5.1.min.js"></script >
+
+<script>
+	$(function(){$("#article1").show(300,articlefadein)})
+
+	function articlefadein(){
+$("article").fadeIn()
+}
+
+	function submit(){
+alert("这个按钮暂时没用")
+}
+
+	function deBug(){
+}
+</script>
+
+</head>
+<body>
+<div id="bodyDiv">
+ <nav id="deBug" onclick="deBug()">START</nav>
+
+ <header>
+  <h1 id="homePic"></h1>
+ </header>
+
+ <article id=article1 class="bodyArticle">
+
+ <header>
+
+  <h1 class="h11">我们是谁</h1>
+
+  <span class="span1">文案库-创始人</span>
+
+ </header>
+
+ <div class="weDiv">
+
+  <img id ="xiongShiMaoPic" class="wePic" src="xiongshimao.png" alt="加载中">
+
+  <h2 class="h21">夏毅诚<h2>
+
+  <span class="span2">动漫爱好者</span><br/>
+
+  <span class="span3">来自中国昆山，现初三学生，担任“库主”</span>
+
+ </div>
+
+ <div class="weDiv">
+
+  <img class="wePic" src="iceCube.png" alt="加载中">
+
+  <h2 class="h21">李方凯<h2>
+
+  <span class="span2">视频编辑，前端编程爱好者</span><br/>
+
+  <span class="span3">来自中国江西，现初三学生，喜欢硬核的玩意</span>
+
+ </div>
+ </article>
+
+ <article class="bodyArticle">
+
+  <header>
+
+   <h1 class="h11">作品展示</h1>
+
+   <span class="span1">
+这里什么都没有</span>
+
+  </header>
+
+  <img class="morePic" src="picture.png" alt="加载中">
+
+  <img class="morePic" src="picture.png" alt="加载中">
+
+  <img class="morePic" src="picture.png" alt="加载中">
+
+  <img class="morePic" src="picture.png" alt="加载中">
+
+  <img class="morePic" src="picture.png" alt="加载中">
+
+  <img class="morePic" src="picture.png" alt="加载中">
+
+ </article>
+
+ <article class="bodyArticle">
+  <header>
+   <h1 class="h11">加入我们</h1>
+   <span class="span1">要求：具有野心:)</span>
+  </header>
+
+  <from>
+   <input type="text" name="username" placeholder="你的称呼" class="registrationFormSet"><br/>
+
+   <input type="email" name="email" placeholder="你的邮箱" class="registrationFormSet"><br/>
+
+   <input type="tel" name="usrtel" placeholder="你的电话" class="registrationFormSet"><br/>
+
+   <textarea id="textarea"placeholder="写下你的特长/爱好/领域，以及加入我们的原因"></textarea> <br />
+
+   <button type="submit" value="Submit" class="registrationFormSet" id="submit1">提交</button>
+
+  </from>
+ </article>
+</div>
+</body>
+</html>
